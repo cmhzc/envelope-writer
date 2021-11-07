@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 
@@ -30,6 +31,7 @@ func main() {
 	for {
 		msg, err := r.ReadMessage(context.Background())
 		if err != nil {
+			fmt.Println(err)
 			log.Fatal("error occured when accepting message")
 			break
 		}
