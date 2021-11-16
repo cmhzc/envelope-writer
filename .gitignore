@@ -15,5 +15,4 @@
 # vendor/
 
 # Configuration files
-Dockerfile
 init_db.sql
